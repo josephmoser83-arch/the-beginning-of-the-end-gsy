@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -38,7 +38,7 @@
 
     .container {
       display: grid;
-      grid-template-columns: 220px 1fr 200px;
+      grid-template-columns: 220px 1fr 220px;
       gap: 1rem;
       max-width: 1200px;
       margin: 0 auto;
@@ -52,17 +52,17 @@
       font-size: 0.9rem;
     }
 
-    nav ul, aside ul {
+    nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    nav li, aside li {
+    nav li {
       margin-bottom: 0.6rem;
     }
 
-    nav a, aside a {
+    nav a {
       color: #c9c2ad;
       text-decoration: none;
     }
@@ -78,7 +78,11 @@
       padding: 1.5rem;
     }
 
-    main h2 {
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
       font-family: 'Cinzel', serif;
       font-size: 1.4rem;
       border-bottom: 1px solid #444;
@@ -91,6 +95,34 @@
       padding: 1rem;
       background: #120000;
       border: 1px solid #3a0000;
+    }
+
+    .image-slot {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border: 1px dashed #5a0000;
+      background: #0d0000;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    .record-entry {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .record-entry h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      margin-bottom: 0.6rem;
     }
 
     footer {
@@ -125,14 +157,41 @@
   </nav>
 
   <main>
-    <h2 id="record">The Record</h2>
-    <div class="artifact">
-      <p><em>Observation precedes judgment.</em></p>
-      <p>Entries are logged without embellishment. Time, place, recurrence.</p>
-    </div>
+    <section id="record">
+      <h2>The Record</h2>
 
-    <h2 id="patterns">The Pattern</h2>
-    <p>Order reveals itself through repetition. Chaos only appears random.</p>
+      <div class="image-slot">[ Image Slot – Evidence / Symbol / Artifact ]</div>
+
+      <div class="record-entry">
+        <h3>Entry 001</h3>
+        <div class="meta">Date: — | Time Window: 18:00–22:00 | Status: Logged</div>
+        <p>The event was recorded without interruption. Conditions aligned with prior observations. No deviation noted.</p>
+      </div>
+
+      <div class="record-entry">
+        <h3>Entry 002</h3>
+        <div class="meta">Date: — | Time Window: 18:00–22:00 | Status: Logged</div>
+        <p>Repetition reinforces structure. Absence of noise suggests deliberation rather than chance.</p>
+      </div>
+    </section>
+
+    <section id="patterns">
+      <h2>The Pattern</h2>
+      <div class="image-slot">[ Image Slot – Timeline / Diagram / Markings ]</div>
+      <p>Order reveals itself through recurrence. What appears random submits to patience.</p>
+    </section>
+
+    <section id="watchers">
+      <h2>The Watchers</h2>
+      <p>Observation is collective. Identity dissolves. Only attention remains.</p>
+    </section>
+
+    <section id="doctrine">
+      <h2>Doctrine</h2>
+      <div class="artifact">
+        <p>Observation precedes judgment. Judgment precedes action. Action is inevitable.</p>
+      </div>
+    </section>
   </main>
 
   <aside>
